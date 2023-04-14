@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Tree Summary - Criterion.rs</title>
+    <style type="text/css">
+        body {
+            font: 14px Helvetica Neue;
+            text-rendering: optimizelegibility;
+        }
+
+        .body {
+            width: 960px;
+            margin: auto;
+        }
+
+        a:link {
+            color: #1F78B4;
+            text-decoration: none;
+        }
+
+        h2 {
+            font-size: 36px;
+            font-weight: 300;
+        }
+
+        h3 {
+            font-size: 24px;
+            font-weight: 300;
+        }
+
+        #footer {
+            height: 40px;
+            background: #888;
+            color: white;
+            font-size: larger;
+            font-weight: 300;
+        }
+
+        #footer a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        #footer p {
+            text-align: center
+        }
+    </style>
+</head>
+
+<body>
+    <div class="body">
+        <h2>Tree</h2>
+        <h3>Violin Plot</h3>
+        <a href="violin.svg">
+            <img src="violin.svg" alt="Violin Plot" />
+        </a>
+        <p>This chart shows the relationship between function/parameter and iteration time. The thickness of the shaded
+            region indicates the probability that a measurement of the given function/parameter would take a particular
+            length of time.</p>
+        <h3>Line Chart</h3>
+        <img src="lines.svg" alt="Line Chart" />
+        <p>This chart shows the mean measured time for each function as the input (or the size of the input) increases.</p>
+        <section class="plots">
+            <a href="../../Tree/gen-proof_new/128/report/index.html">
+                <h4>Tree/gen-proof/new/128</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Tree/gen-proof_new/128/report/pdf.svg">
+                                <img src="../../Tree/gen-proof_new/128/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Tree/gen-proof_new/128/report/regression.svg">
+                                <img src="../../Tree/gen-proof_new/128/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Tree/gen-proof_new/256/report/index.html">
+                <h4>Tree/gen-proof/new/256</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Tree/gen-proof_new/256/report/pdf.svg">
+                                <img src="../../Tree/gen-proof_new/256/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Tree/gen-proof_new/256/report/regression.svg">
+                                <img src="../../Tree/gen-proof_new/256/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Tree/gen-proof_new/384/report/index.html">
+                <h4>Tree/gen-proof/new/384</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Tree/gen-proof_new/384/report/pdf.svg">
+                                <img src="../../Tree/gen-proof_new/384/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Tree/gen-proof_new/384/report/regression.svg">
+                                <img src="../../Tree/gen-proof_new/384/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Tree/gen-proof_new/512/report/index.html">
+                <h4>Tree/gen-proof/new/512</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Tree/gen-proof_new/512/report/pdf.svg">
+                                <img src="../../Tree/gen-proof_new/512/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Tree/gen-proof_new/512/report/regression.svg">
+                                <img src="../../Tree/gen-proof_new/512/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Tree/gen-proof_new/640/report/index.html">
+                <h4>Tree/gen-proof/new/640</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Tree/gen-proof_new/640/report/pdf.svg">
+                                <img src="../../Tree/gen-proof_new/640/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Tree/gen-proof_new/640/report/regression.svg">
+                                <img src="../../Tree/gen-proof_new/640/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Tree/gen-proof_new/768/report/index.html">
+                <h4>Tree/gen-proof/new/768</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Tree/gen-proof_new/768/report/pdf.svg">
+                                <img src="../../Tree/gen-proof_new/768/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Tree/gen-proof_new/768/report/regression.svg">
+                                <img src="../../Tree/gen-proof_new/768/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Tree/gen-proof_new/896/report/index.html">
+                <h4>Tree/gen-proof/new/896</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Tree/gen-proof_new/896/report/pdf.svg">
+                                <img src="../../Tree/gen-proof_new/896/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Tree/gen-proof_new/896/report/regression.svg">
+                                <img src="../../Tree/gen-proof_new/896/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Tree/gen-proof_new/1024/report/index.html">
+                <h4>Tree/gen-proof/new/1024</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Tree/gen-proof_new/1024/report/pdf.svg">
+                                <img src="../../Tree/gen-proof_new/1024/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Tree/gen-proof_new/1024/report/regression.svg">
+                                <img src="../../Tree/gen-proof_new/1024/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Tree/gen-proof_new/1152/report/index.html">
+                <h4>Tree/gen-proof/new/1152</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Tree/gen-proof_new/1152/report/pdf.svg">
+                                <img src="../../Tree/gen-proof_new/1152/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Tree/gen-proof_new/1152/report/regression.svg">
+                                <img src="../../Tree/gen-proof_new/1152/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Tree/gen-proof_new/1280/report/index.html">
+                <h4>Tree/gen-proof/new/1280</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Tree/gen-proof_new/1280/report/pdf.svg">
+                                <img src="../../Tree/gen-proof_new/1280/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Tree/gen-proof_new/1280/report/regression.svg">
+                                <img src="../../Tree/gen-proof_new/1280/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Tree/gen-proof_new/1408/report/index.html">
+                <h4>Tree/gen-proof/new/1408</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Tree/gen-proof_new/1408/report/pdf.svg">
+                                <img src="../../Tree/gen-proof_new/1408/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Tree/gen-proof_new/1408/report/regression.svg">
+                                <img src="../../Tree/gen-proof_new/1408/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Tree/gen-proof_new/1536/report/index.html">
+                <h4>Tree/gen-proof/new/1536</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Tree/gen-proof_new/1536/report/pdf.svg">
+                                <img src="../../Tree/gen-proof_new/1536/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Tree/gen-proof_new/1536/report/regression.svg">
+                                <img src="../../Tree/gen-proof_new/1536/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Tree/gen-proof_new/1664/report/index.html">
+                <h4>Tree/gen-proof/new/1664</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Tree/gen-proof_new/1664/report/pdf.svg">
+                                <img src="../../Tree/gen-proof_new/1664/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Tree/gen-proof_new/1664/report/regression.svg">
+                                <img src="../../Tree/gen-proof_new/1664/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Tree/gen-proof_new/1792/report/index.html">
+                <h4>Tree/gen-proof/new/1792</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Tree/gen-proof_new/1792/report/pdf.svg">
+                                <img src="../../Tree/gen-proof_new/1792/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Tree/gen-proof_new/1792/report/regression.svg">
+                                <img src="../../Tree/gen-proof_new/1792/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Tree/gen-proof_new/1920/report/index.html">
+                <h4>Tree/gen-proof/new/1920</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Tree/gen-proof_new/1920/report/pdf.svg">
+                                <img src="../../Tree/gen-proof_new/1920/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Tree/gen-proof_new/1920/report/regression.svg">
+                                <img src="../../Tree/gen-proof_new/1920/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Tree/gen-proof_resume/128/report/index.html">
+                <h4>Tree/gen-proof/resume/128</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Tree/gen-proof_resume/128/report/pdf.svg">
+                                <img src="../../Tree/gen-proof_resume/128/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Tree/gen-proof_resume/128/report/regression.svg">
+                                <img src="../../Tree/gen-proof_resume/128/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Tree/gen-proof_resume/256/report/index.html">
+                <h4>Tree/gen-proof/resume/256</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Tree/gen-proof_resume/256/report/pdf.svg">
+                                <img src="../../Tree/gen-proof_resume/256/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Tree/gen-proof_resume/256/report/regression.svg">
+                                <img src="../../Tree/gen-proof_resume/256/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Tree/gen-proof_resume/384/report/index.html">
+                <h4>Tree/gen-proof/resume/384</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Tree/gen-proof_resume/384/report/pdf.svg">
+                                <img src="../../Tree/gen-proof_resume/384/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Tree/gen-proof_resume/384/report/regression.svg">
+                                <img src="../../Tree/gen-proof_resume/384/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Tree/gen-proof_resume/512/report/index.html">
+                <h4>Tree/gen-proof/resume/512</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Tree/gen-proof_resume/512/report/pdf.svg">
+                                <img src="../../Tree/gen-proof_resume/512/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Tree/gen-proof_resume/512/report/regression.svg">
+                                <img src="../../Tree/gen-proof_resume/512/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Tree/gen-proof_resume/640/report/index.html">
+                <h4>Tree/gen-proof/resume/640</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Tree/gen-proof_resume/640/report/pdf.svg">
+                                <img src="../../Tree/gen-proof_resume/640/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Tree/gen-proof_resume/640/report/regression.svg">
+                                <img src="../../Tree/gen-proof_resume/640/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Tree/gen-proof_resume/768/report/index.html">
+                <h4>Tree/gen-proof/resume/768</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Tree/gen-proof_resume/768/report/pdf.svg">
+                                <img src="../../Tree/gen-proof_resume/768/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Tree/gen-proof_resume/768/report/regression.svg">
+                                <img src="../../Tree/gen-proof_resume/768/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Tree/gen-proof_resume/896/report/index.html">
+                <h4>Tree/gen-proof/resume/896</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Tree/gen-proof_resume/896/report/pdf.svg">
+                                <img src="../../Tree/gen-proof_resume/896/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Tree/gen-proof_resume/896/report/regression.svg">
+                                <img src="../../Tree/gen-proof_resume/896/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Tree/gen-proof_resume/1024/report/index.html">
+                <h4>Tree/gen-proof/resume/1024</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Tree/gen-proof_resume/1024/report/pdf.svg">
+                                <img src="../../Tree/gen-proof_resume/1024/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Tree/gen-proof_resume/1024/report/regression.svg">
+                                <img src="../../Tree/gen-proof_resume/1024/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Tree/gen-proof_resume/1152/report/index.html">
+                <h4>Tree/gen-proof/resume/1152</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Tree/gen-proof_resume/1152/report/pdf.svg">
+                                <img src="../../Tree/gen-proof_resume/1152/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Tree/gen-proof_resume/1152/report/regression.svg">
+                                <img src="../../Tree/gen-proof_resume/1152/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Tree/gen-proof_resume/1280/report/index.html">
+                <h4>Tree/gen-proof/resume/1280</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Tree/gen-proof_resume/1280/report/pdf.svg">
+                                <img src="../../Tree/gen-proof_resume/1280/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Tree/gen-proof_resume/1280/report/regression.svg">
+                                <img src="../../Tree/gen-proof_resume/1280/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Tree/gen-proof_resume/1408/report/index.html">
+                <h4>Tree/gen-proof/resume/1408</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Tree/gen-proof_resume/1408/report/pdf.svg">
+                                <img src="../../Tree/gen-proof_resume/1408/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Tree/gen-proof_resume/1408/report/regression.svg">
+                                <img src="../../Tree/gen-proof_resume/1408/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Tree/gen-proof_resume/1536/report/index.html">
+                <h4>Tree/gen-proof/resume/1536</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Tree/gen-proof_resume/1536/report/pdf.svg">
+                                <img src="../../Tree/gen-proof_resume/1536/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Tree/gen-proof_resume/1536/report/regression.svg">
+                                <img src="../../Tree/gen-proof_resume/1536/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Tree/gen-proof_resume/1664/report/index.html">
+                <h4>Tree/gen-proof/resume/1664</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Tree/gen-proof_resume/1664/report/pdf.svg">
+                                <img src="../../Tree/gen-proof_resume/1664/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Tree/gen-proof_resume/1664/report/regression.svg">
+                                <img src="../../Tree/gen-proof_resume/1664/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Tree/gen-proof_resume/1792/report/index.html">
+                <h4>Tree/gen-proof/resume/1792</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Tree/gen-proof_resume/1792/report/pdf.svg">
+                                <img src="../../Tree/gen-proof_resume/1792/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Tree/gen-proof_resume/1792/report/regression.svg">
+                                <img src="../../Tree/gen-proof_resume/1792/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Tree/gen-proof_resume/1920/report/index.html">
+                <h4>Tree/gen-proof/resume/1920</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Tree/gen-proof_resume/1920/report/pdf.svg">
+                                <img src="../../Tree/gen-proof_resume/1920/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Tree/gen-proof_resume/1920/report/regression.svg">
+                                <img src="../../Tree/gen-proof_resume/1920/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Tree/verifier_feed-proof/128/report/index.html">
+                <h4>Tree/verifier/feed-proof/128</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Tree/verifier_feed-proof/128/report/pdf.svg">
+                                <img src="../../Tree/verifier_feed-proof/128/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Tree/verifier_feed-proof/128/report/regression.svg">
+                                <img src="../../Tree/verifier_feed-proof/128/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Tree/verifier_feed-proof/256/report/index.html">
+                <h4>Tree/verifier/feed-proof/256</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Tree/verifier_feed-proof/256/report/pdf.svg">
+                                <img src="../../Tree/verifier_feed-proof/256/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Tree/verifier_feed-proof/256/report/regression.svg">
+                                <img src="../../Tree/verifier_feed-proof/256/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Tree/verifier_feed-proof/384/report/index.html">
+                <h4>Tree/verifier/feed-proof/384</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Tree/verifier_feed-proof/384/report/pdf.svg">
+                                <img src="../../Tree/verifier_feed-proof/384/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Tree/verifier_feed-proof/384/report/regression.svg">
+                                <img src="../../Tree/verifier_feed-proof/384/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Tree/verifier_feed-proof/512/report/index.html">
+                <h4>Tree/verifier/feed-proof/512</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Tree/verifier_feed-proof/512/report/pdf.svg">
+                                <img src="../../Tree/verifier_feed-proof/512/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Tree/verifier_feed-proof/512/report/regression.svg">
+                                <img src="../../Tree/verifier_feed-proof/512/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Tree/verifier_feed-proof/640/report/index.html">
+                <h4>Tree/verifier/feed-proof/640</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Tree/verifier_feed-proof/640/report/pdf.svg">
+                                <img src="../../Tree/verifier_feed-proof/640/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Tree/verifier_feed-proof/640/report/regression.svg">
+                                <img src="../../Tree/verifier_feed-proof/640/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Tree/verifier_feed-proof/768/report/index.html">
+                <h4>Tree/verifier/feed-proof/768</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Tree/verifier_feed-proof/768/report/pdf.svg">
+                                <img src="../../Tree/verifier_feed-proof/768/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Tree/verifier_feed-proof/768/report/regression.svg">
+                                <img src="../../Tree/verifier_feed-proof/768/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Tree/verifier_feed-proof/896/report/index.html">
+                <h4>Tree/verifier/feed-proof/896</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Tree/verifier_feed-proof/896/report/pdf.svg">
+                                <img src="../../Tree/verifier_feed-proof/896/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Tree/verifier_feed-proof/896/report/regression.svg">
+                                <img src="../../Tree/verifier_feed-proof/896/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Tree/verifier_feed-proof/1024/report/index.html">
+                <h4>Tree/verifier/feed-proof/1024</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Tree/verifier_feed-proof/1024/report/pdf.svg">
+                                <img src="../../Tree/verifier_feed-proof/1024/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Tree/verifier_feed-proof/1024/report/regression.svg">
+                                <img src="../../Tree/verifier_feed-proof/1024/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Tree/verifier_feed-proof/1152/report/index.html">
+                <h4>Tree/verifier/feed-proof/1152</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Tree/verifier_feed-proof/1152/report/pdf.svg">
+                                <img src="../../Tree/verifier_feed-proof/1152/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Tree/verifier_feed-proof/1152/report/regression.svg">
+                                <img src="../../Tree/verifier_feed-proof/1152/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Tree/verifier_feed-proof/1280/report/index.html">
+                <h4>Tree/verifier/feed-proof/1280</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Tree/verifier_feed-proof/1280/report/pdf.svg">
+                                <img src="../../Tree/verifier_feed-proof/1280/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Tree/verifier_feed-proof/1280/report/regression.svg">
+                                <img src="../../Tree/verifier_feed-proof/1280/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Tree/verifier_feed-proof/1408/report/index.html">
+                <h4>Tree/verifier/feed-proof/1408</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Tree/verifier_feed-proof/1408/report/pdf.svg">
+                                <img src="../../Tree/verifier_feed-proof/1408/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Tree/verifier_feed-proof/1408/report/regression.svg">
+                                <img src="../../Tree/verifier_feed-proof/1408/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Tree/verifier_feed-proof/1536/report/index.html">
+                <h4>Tree/verifier/feed-proof/1536</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Tree/verifier_feed-proof/1536/report/pdf.svg">
+                                <img src="../../Tree/verifier_feed-proof/1536/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Tree/verifier_feed-proof/1536/report/regression.svg">
+                                <img src="../../Tree/verifier_feed-proof/1536/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Tree/verifier_feed-proof/1664/report/index.html">
+                <h4>Tree/verifier/feed-proof/1664</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Tree/verifier_feed-proof/1664/report/pdf.svg">
+                                <img src="../../Tree/verifier_feed-proof/1664/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Tree/verifier_feed-proof/1664/report/regression.svg">
+                                <img src="../../Tree/verifier_feed-proof/1664/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Tree/verifier_feed-proof/1792/report/index.html">
+                <h4>Tree/verifier/feed-proof/1792</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Tree/verifier_feed-proof/1792/report/pdf.svg">
+                                <img src="../../Tree/verifier_feed-proof/1792/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Tree/verifier_feed-proof/1792/report/regression.svg">
+                                <img src="../../Tree/verifier_feed-proof/1792/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Tree/verifier_feed-proof/1920/report/index.html">
+                <h4>Tree/verifier/feed-proof/1920</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Tree/verifier_feed-proof/1920/report/pdf.svg">
+                                <img src="../../Tree/verifier_feed-proof/1920/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Tree/verifier_feed-proof/1920/report/regression.svg">
+                                <img src="../../Tree/verifier_feed-proof/1920/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <div id="footer">
+        <p>This report was generated by
+            <a href="https://github.com/bheisler/criterion.rs">Criterion.rs</a>, a statistics-driven benchmarking
+            library in Rust.</p>
+    </div>
+</body>
+
+</html>
