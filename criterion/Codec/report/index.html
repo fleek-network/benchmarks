@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Codec Summary - Criterion.rs</title>
+    <style type="text/css">
+        body {
+            font: 14px Helvetica Neue;
+            text-rendering: optimizelegibility;
+        }
+
+        .body {
+            width: 960px;
+            margin: auto;
+        }
+
+        a:link {
+            color: #1F78B4;
+            text-decoration: none;
+        }
+
+        h2 {
+            font-size: 36px;
+            font-weight: 300;
+        }
+
+        h3 {
+            font-size: 24px;
+            font-weight: 300;
+        }
+
+        #footer {
+            height: 40px;
+            background: #888;
+            color: white;
+            font-size: larger;
+            font-weight: 300;
+        }
+
+        #footer a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        #footer p {
+            text-align: center
+        }
+    </style>
+</head>
+
+<body>
+    <div class="body">
+        <h2>Codec</h2>
+        <h3>Violin Plot</h3>
+        <a href="violin.svg">
+            <img src="violin.svg" alt="Violin Plot" />
+        </a>
+        <p>This chart shows the relationship between function/parameter and iteration time. The thickness of the shaded
+            region indicates the probability that a measurement of the given function/parameter would take a particular
+            length of time.</p>
+        <h3>Line Chart</h3>
+        <img src="lines.svg" alt="Line Chart" />
+        <p>This chart shows the mean measured time for each function as the input (or the size of the input) increases.</p>
+        <section class="plots">
+            <a href="../../Codec/content_range_request_decode/report/index.html">
+                <h4>Codec/content_range_request/decode</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Codec/content_range_request_decode/report/pdf.svg">
+                                <img src="../../Codec/content_range_request_decode/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Codec/content_range_request_decode/report/regression.svg">
+                                <img src="../../Codec/content_range_request_decode/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Codec/content_range_request_encode/report/index.html">
+                <h4>Codec/content_range_request/encode</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Codec/content_range_request_encode/report/pdf.svg">
+                                <img src="../../Codec/content_range_request_encode/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Codec/content_range_request_encode/report/regression.svg">
+                                <img src="../../Codec/content_range_request_encode/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Codec/content_request_decode/report/index.html">
+                <h4>Codec/content_request/decode</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Codec/content_request_decode/report/pdf.svg">
+                                <img src="../../Codec/content_request_decode/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Codec/content_request_decode/report/regression.svg">
+                                <img src="../../Codec/content_request_decode/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Codec/content_request_encode/report/index.html">
+                <h4>Codec/content_request/encode</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Codec/content_request_encode/report/pdf.svg">
+                                <img src="../../Codec/content_request_encode/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Codec/content_request_encode/report/regression.svg">
+                                <img src="../../Codec/content_request_encode/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Codec/content_response_decode/report/index.html">
+                <h4>Codec/content_response/decode</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Codec/content_response_decode/report/pdf.svg">
+                                <img src="../../Codec/content_response_decode/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Codec/content_response_decode/report/regression.svg">
+                                <img src="../../Codec/content_response_decode/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Codec/content_response_encode/report/index.html">
+                <h4>Codec/content_response/encode</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Codec/content_response_encode/report/pdf.svg">
+                                <img src="../../Codec/content_response_encode/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Codec/content_response_encode/report/regression.svg">
+                                <img src="../../Codec/content_response_encode/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Codec/decryption_key_request_decode/report/index.html">
+                <h4>Codec/decryption_key_request/decode</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Codec/decryption_key_request_decode/report/pdf.svg">
+                                <img src="../../Codec/decryption_key_request_decode/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Codec/decryption_key_request_decode/report/regression.svg">
+                                <img src="../../Codec/decryption_key_request_decode/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Codec/decryption_key_request_encode/report/index.html">
+                <h4>Codec/decryption_key_request/encode</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Codec/decryption_key_request_encode/report/pdf.svg">
+                                <img src="../../Codec/decryption_key_request_encode/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Codec/decryption_key_request_encode/report/regression.svg">
+                                <img src="../../Codec/decryption_key_request_encode/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Codec/decryption_key_response_decode/report/index.html">
+                <h4>Codec/decryption_key_response/decode</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Codec/decryption_key_response_decode/report/pdf.svg">
+                                <img src="../../Codec/decryption_key_response_decode/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Codec/decryption_key_response_decode/report/regression.svg">
+                                <img src="../../Codec/decryption_key_response_decode/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Codec/decryption_key_response_encode/report/index.html">
+                <h4>Codec/decryption_key_response/encode</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Codec/decryption_key_response_encode/report/pdf.svg">
+                                <img src="../../Codec/decryption_key_response_encode/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Codec/decryption_key_response_encode/report/regression.svg">
+                                <img src="../../Codec/decryption_key_response_encode/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Codec/end_of_request_signal_decode/report/index.html">
+                <h4>Codec/end_of_request_signal/decode</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Codec/end_of_request_signal_decode/report/pdf.svg">
+                                <img src="../../Codec/end_of_request_signal_decode/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Codec/end_of_request_signal_decode/report/regression.svg">
+                                <img src="../../Codec/end_of_request_signal_decode/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Codec/end_of_request_signal_encode/report/index.html">
+                <h4>Codec/end_of_request_signal/encode</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Codec/end_of_request_signal_encode/report/pdf.svg">
+                                <img src="../../Codec/end_of_request_signal_encode/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Codec/end_of_request_signal_encode/report/regression.svg">
+                                <img src="../../Codec/end_of_request_signal_encode/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Codec/handshake_request_decode/report/index.html">
+                <h4>Codec/handshake_request/decode</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Codec/handshake_request_decode/report/pdf.svg">
+                                <img src="../../Codec/handshake_request_decode/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Codec/handshake_request_decode/report/regression.svg">
+                                <img src="../../Codec/handshake_request_decode/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Codec/handshake_request_encode/report/index.html">
+                <h4>Codec/handshake_request/encode</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Codec/handshake_request_encode/report/pdf.svg">
+                                <img src="../../Codec/handshake_request_encode/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Codec/handshake_request_encode/report/regression.svg">
+                                <img src="../../Codec/handshake_request_encode/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Codec/handshake_response_decode/report/index.html">
+                <h4>Codec/handshake_response/decode</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Codec/handshake_response_decode/report/pdf.svg">
+                                <img src="../../Codec/handshake_response_decode/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Codec/handshake_response_decode/report/regression.svg">
+                                <img src="../../Codec/handshake_response_decode/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Codec/handshake_response_encode/report/index.html">
+                <h4>Codec/handshake_response/encode</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Codec/handshake_response_encode/report/pdf.svg">
+                                <img src="../../Codec/handshake_response_encode/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Codec/handshake_response_encode/report/regression.svg">
+                                <img src="../../Codec/handshake_response_encode/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Codec/termination_signal_decode/report/index.html">
+                <h4>Codec/termination_signal/decode</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Codec/termination_signal_decode/report/pdf.svg">
+                                <img src="../../Codec/termination_signal_decode/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Codec/termination_signal_decode/report/regression.svg">
+                                <img src="../../Codec/termination_signal_decode/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Codec/termination_signal_encode/report/index.html">
+                <h4>Codec/termination_signal/encode</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Codec/termination_signal_encode/report/pdf.svg">
+                                <img src="../../Codec/termination_signal_encode/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Codec/termination_signal_encode/report/regression.svg">
+                                <img src="../../Codec/termination_signal_encode/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Codec/update_epoch_signal_decode/report/index.html">
+                <h4>Codec/update_epoch_signal/decode</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Codec/update_epoch_signal_decode/report/pdf.svg">
+                                <img src="../../Codec/update_epoch_signal_decode/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Codec/update_epoch_signal_decode/report/regression.svg">
+                                <img src="../../Codec/update_epoch_signal_decode/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../Codec/update_epoch_signal_encode/report/index.html">
+                <h4>Codec/update_epoch_signal/encode</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../Codec/update_epoch_signal_encode/report/pdf.svg">
+                                <img src="../../Codec/update_epoch_signal_encode/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../Codec/update_epoch_signal_encode/report/regression.svg">
+                                <img src="../../Codec/update_epoch_signal_encode/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <div id="footer">
+        <p>This report was generated by
+            <a href="https://github.com/bheisler/criterion.rs">Criterion.rs</a>, a statistics-driven benchmarking
+            library in Rust.</p>
+    </div>
+</body>
+
+</html>
